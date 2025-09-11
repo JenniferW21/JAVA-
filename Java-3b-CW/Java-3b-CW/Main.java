@@ -11,23 +11,23 @@ class Main {
   */
   void init(){
     // print Welcome
-    System.out.println("Welcome")
+    System.out.println("Welcome");
     
 
     // print Hello with the quotes displayed
-    System.out.println("Hello")
+    System.out.println(\"Hello");
     
     // print \Java Code\ as shown
-    System.out.println
+    System.out.println(\"Java Code");
     
     // print the name Joe tabbed once
-    
+    System.out.println(\t"Joe");
 
     // print the name Mary tabbed twice
-    
+    System.out.println(\t \t"Joe");
     
     // print one, two and three on separate lines using a single line of code
-      
+    System.out.print("hi");
 	
   }
   
