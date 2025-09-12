@@ -15,19 +15,19 @@ class Main {
     
 
     // print Hello with the quotes displayed
-    System.out.println(\"Hello");
+    System.out.println("\"Hello\"");
     
     // print \Java Code\ as shown
-    System.out.println(\"Java Code");
+    System.out.println("\\Java Code\\");
     
     // print the name Joe tabbed once
-    System.out.println(\t"Joe");
+    System.out.println("\tJoe");
 
     // print the name Mary tabbed twice
-    System.out.println(\t \t"Joe");
+    System.out.println("\t\tJoe");
     
     // print one, two and three on separate lines using a single line of code
-    System.out.print("hi");
+    System.out.print("one\ntwo\nthree");
 	
   }
   
