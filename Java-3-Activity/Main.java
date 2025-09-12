@@ -9,7 +9,7 @@ class Main {
   void init(){
    System.out.println("Hi");
    System.out.println("Jennifer Wang");
-   System.out.println("Jennifer Wang, adress"); 
+   System.out.println("Jennifer Wang, address"); 
    System.out.println("Jennifer Wang \n address"); 
   }
 
