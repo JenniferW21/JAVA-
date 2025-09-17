@@ -51,8 +51,11 @@ class Main {
     3) the status whether the battery is charging
 */
     boolean light_on = true;
+    System.out.println("The light is on: " + light_on);
     boolean gameOver = true;
+    System.out.println("The game is over: " + gameOver);
     boolean battery_charging = true;
+    System.out.println("The battery is charging: " + battery_charging);
 
 
     // **************************************************
