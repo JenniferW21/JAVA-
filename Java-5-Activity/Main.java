@@ -75,10 +75,11 @@ System.out.println("y = "+ y);
     Write the equation in file EQ3.PNG in Jave. Create appropriate variables as required.
     Declare and assign values to any new variables.
 */ 
-double b = 2;
-double h = 4;
-double area = (1/2)*b*h;;
-System.out.println("Area = "+ area);
+double area = 0;
+double b = 8.0;
+double h = 4.0;
+area = 1/2.0*b*h;
+System.out.println("Area = " + area + " sq. units");
 
 /*  
     **** Bonus Challenge ****:
@@ -92,11 +93,13 @@ System.out.println("Area = "+ area);
     2) Write the Java code that will calculate how many eggs
     are left over after all baskets are filled with 12 eggs each.
 */
-
+    int totalNumOfEggs = 100;
+    int numOfBasketsFilled = 0;
+    int remaningEggs = 0;
 
     // Use integer division to give us the quotient when dividing by 12
-
-
+    numOfBasketsFilled = totalNumOfEggs/12;
+    System.out.println("Number of baskets filled: " +numOfBasketsFilled);
     // use the modulus operator to give you the remainder.
 
 
