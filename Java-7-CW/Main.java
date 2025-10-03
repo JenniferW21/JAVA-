@@ -19,13 +19,17 @@ class Main {
   /*
     Problem 2: Translate the formula from eq2.png.
   */
-
-
+  
+    double y=0; //Since we already declared x in the function init(), don't declare it again.
+    y=2*x/(Math.sin(2 * Math.toRadians(x)));
+	  System.out.println("#2 : y = "+y);
     
     /*
     Problem 3: Translate the formula from eq3.png.
   */
-
+    double b=0;
+    b=Math.abs(Math.pow(x,2) + 1);
+	  System.out.println("#3 : b = "+b);
     
 
   }
