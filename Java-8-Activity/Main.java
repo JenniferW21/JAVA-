@@ -54,7 +54,7 @@ class Main {
     double radius = Input.readDouble();
     System.out.println("Enter a height");
     double h = Input.readDouble();
-    System.out.println("Sphere Cone: " + cone(r,h));
+    System.out.println("Sphere Cone: " + cone(radius,h));
     //5
     System.out.println("Enter a x2");
     double x2 = Input.readDouble();
