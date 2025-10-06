@@ -11,8 +11,7 @@ class Main {
 
   //2: Fahrenheit to Celsius temperature conversion
   double ftoC(double f){
-    double c =(f-32)*5.0/9.0;
-    return c;    
+    return (f-32)*5.0/9.0;   
   }
 
   //3: Sphere volume
@@ -39,12 +38,12 @@ class Main {
     //1
     System.out.println("Enter your name ");
     String name = Input.readString();
-    print("Welcome "+name);
+    print("Welcome "+name); //print has been defined
 
     //2
     System.out.println("Enter a temp in degree Fahrenheit");
     double f = Input.readDouble();
-    System.out.println("Temp in degree Celsius is " + ftoC(f));
+    print("Temp in degree Celsius is " + ftoC(f));
     //3
     System.out.println("Enter radius");
     double r = Input.readDouble();
