@@ -55,13 +55,13 @@ class Main {
     double h = Input.readDouble();
     System.out.println("Sphere Cone: " + cone(radius,h));
     //5
-    System.out.println("Enter a x2");
+    System.out.println("Enter x2");
     double x2 = Input.readDouble();
-    System.out.println("Enter a x1");
+    System.out.println("Enter x1");
     double x1 = Input.readDouble();
-    System.out.println("Enter a y2");
+    System.out.println("Enter y2");
     double y2 = Input.readDouble();
-    System.out.println("Enter a y1");
+    System.out.println("Enter y1");
     double y1 = Input.readDouble();
     System.out.println("Distance is " + distance(x2,x1,y2,y1));
     
