@@ -14,7 +14,13 @@ class Main {
     score (200 - 1600) and returns "ACCEPTED" if gpa is 3.2 or better or
     if SAT score is 1450 or better; otherwise returns "Not Accepted".
   */
-
+    String collegeAoo(){
+      if(GPA >= 3.2 && SAT >= 1450){
+        return "Accepted";
+      }else{
+        return "Not Accepted"
+      }
+    }
    
     
   /*
@@ -23,14 +29,24 @@ class Main {
     returns a string "Fuel Economy" if the speed is between 40 and 65 MPH inclusive;  
     otherwise it returns "Not Optimal".
   */
-
+    String ecoFuel(double speed){
+      if(speed>= 40 && speed<=65){
+        return "Fuel Economy";
+      }else{
+        return "Not Optional";
+      }
+    }
 
   /*
     Problem 3:
     Write a function speedFine() that accepts the speed on a speeding ticket and          returns a fine of $75 for speeds between 60 and 70 (inlcusive); otherwise return 
     a fine of $75 plus two dollars for every mile over 70.
   */
-
+     String speedFine(double speed){
+      if(speed > 70){
+        return ""
+      }
+     }
 
     
   /*
