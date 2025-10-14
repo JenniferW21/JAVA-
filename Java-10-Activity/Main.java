@@ -11,6 +11,8 @@ class Main {
    System.out.println(isGraduating(11,45));
    System.out.println(BMI(100,60));
    System.out.println(BMI(260,50));
+   System.out.println(blueOrViolet(700));
+   System.out.println(blueOrViolet(590));
 
   }
 
@@ -94,11 +96,11 @@ double gpa(double GPA){
 */
 //**&& has precedence over ||**
   boolean blueOrViolet(int freq){
-    if(freq>=600 && freq<=670 || freq>= && freq<=750){ 
+    if(freq>=600 && freq<=670 || freq>=700 && freq<=750)
       return true;
     else
       return false;
-    }
+  
   }
 
   
