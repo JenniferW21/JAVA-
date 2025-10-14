@@ -85,13 +85,21 @@ double gpa(double GPA){
         return 5.00;
       else if(pounds>15 && pounds<=25)
         return 10.00;
-      else if()
+      else
+        return 10+(pounds-25)*0.02;
     }
 
 /* Challenge 5:
   Write a function "blueOrViolet" that accepts a light frequency in THz and returns true for either blue frequencies (600-670 THz inclusive) or violet frequencies (700-750 THz inclusive), otherwise return false.
 */
-
+//**&& has precedence over ||**
+  boolean blueOrViolet(int freq){
+    if(freq>=600 && freq<=670 || freq>= && freq<=750){ 
+      return true;
+    else
+      return false;
+    }
+  }
 
   
 } 
