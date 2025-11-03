@@ -7,7 +7,22 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
-
+      System.out.println(collegeCredit("MKUFCE1"));
+      System.out.println(collegeCredit("MKUFC1"));
+      // counselor
+      System.out.println(getCounselor("1D0"));
+      System.out.println(getCounselor("1B0"));
+      System.out.println(getCounselor("E10"));
+      System.out.println(getCounselor("1F0"));
+      System.out.println(getCounselor("1C0"));
+      System.out.println(getCounselor("1G0"));
+      System.out.println(getCounselor("X10"));
+      // image type
+      System.out.println(imageType("firstQuarter.png"));
+      System.out.println(imageType("documentX.pdf"));
+      System.out.println(imageType("pic1.JPEG"));
+      System.out.println(imageType("pic2.jpg"));
+      System.out.println(imageType("ironman.gif"));
     
   }
 /*
@@ -32,7 +47,7 @@ E-Eyzengart
 F-Flores !
 G-Gibson !
 */
-  String getCounselor(Strinh ofcl){
+  String getCounselor(String ofcl){
     if(ofcl.substring(0,1).equals("D")|| ofcl.substring(1,2).equals("D")){
       return "Dinn";
     }
@@ -67,16 +82,16 @@ PDF - Portable Document Format(not an image type)
   String imageType(String fileName){
     int pos = fileName.indexOf(".");
 
-    if(fileNAme.substring(pos+1).equalsIgnoreCase("JPEG")||fileName.substrings(pos+1).equalsIgnoreCase("JPG")){
+    if(fileName.substring(pos+1).equalsIgnoreCase("JPEG")||fileName.substring(pos+1).equalsIgnoreCase("JPG")){
       return "Joint Photographic Experts Group";
     }
-    else if(fileNAme.substring(pos+1).equalsIgnoreCase("PNG")){
+    else if(fileName.substring(pos+1).equalsIgnoreCase("PNG")){
       return "Portable Network Graphics";
     }
-    else if(fileNAme.substring(pos+1).equalsIgnoreCase("GIF")){
+    else if(fileName.substring(pos+1).equalsIgnoreCase("GIF")){
       return "Graphics Interchange Format";
     }
-    else if(fileNAme.substring(pos+1).equalsIgnoreCase("PDF")){
+    else if(fileName.substring(pos+1).equalsIgnoreCase("PDF")){
       return "Portable Document Format(not an image type)";
     }
     else 
