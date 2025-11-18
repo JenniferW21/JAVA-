@@ -7,19 +7,21 @@ class Main {
 
   void init(){
 
+    print(eggs());
+    print(intersect());
    
   }
   /* Problem 1: Eggs
     After a farmer disastrously breaks and loses count of her eggs, she experiences difficulty recalling her original quantity. When questioned about the incident, she is able to remember that her eggs could not be evenly divided into twos, threes, fours, fives, or sixes without having a single egg left over each time. The only number by which the quantity could be evenly divided into was seven. How many eggs did she have originally?
     Write a function eggs() that returns the quantity of eggs she originally had.
   */
-    int eggs(){
-      int numOfeggs = 7;
-      while(!(numOfeggs%6==1)&&(numOfeggs%5==1)&&(numOfeggs%4==1)&&(numOfeggs%3==1)&&(numOfeggs%2==1)){
-        numOfeggs+=7;
-      }
-      return numOfeggs;
+  int eggs(){
+    int numberOfEggs = 7; 
+    while( !(numberOfEggs % 2 == 1 &&numberOfEggs % 3 == 1 &&numberOfEggs % 4 == 1 &&numberOfEggs % 5 == 1 &&numberOfEggs % 6 == 1) ){
+      numberOfEggs+=7;
     }
+    return numberOfEggs;
+  }
 
 
 
