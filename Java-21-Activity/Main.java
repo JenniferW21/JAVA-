@@ -122,23 +122,29 @@ class Main {
       print("5: Security code");
       print("6: Exit Menu");
 
-      if(choice == 1)
+      if(choice == 1){
         allowance1();
-      else if(choice == 2)
+      }else if(choice == 2){
         allowance2();
-      else if(choice == 3)
-        addTwoNumbers()
-      else if(choice == 4){
-        GCF(int n1, int n2)
-          int n1 = Input.readInt();
-          int n2 = Input.readInt();
-      else if(choice == 5)
-        securityCode()
-      else if(choice == 6)
-        
+      }else if(choice == 3){
+        addTwoNumbers();
+      }else if(choice == 4){
+        print("Enter first integer:" );
+        int n1 = Input.readInt();
+        print("Enter second integer:" );
+        int n2 = Input.readInt();
+        print(GCF(n1,n2));
       }
+      else if(choice == 5){
+        print("Enter actual security code: ")
+        String code = Input.readString();
+        securityCode(code)
+      }
+      else(choice == 6)
+      
     }
   }
+}
 
   
   
