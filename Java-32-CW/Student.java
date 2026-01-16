@@ -4,15 +4,17 @@ class Student{
   int gradeLevel;
   double gpa;
   double[] grades;
+  String[] courses;
 
   // constructor
   Student(String firstName, int gradeLevel, double gpa, 
-          double[] grades){
+          double[] grades, String[] courses){
     
     this.firstName  = firstName;
     this.gradeLevel = gradeLevel;
     this.gpa        = gpa;
     this.grades     = grades;
+    this.courses    = courses;
   }
 
   // class fn for grade average
@@ -25,6 +27,13 @@ class Student{
   }
   
   // class fn to check course matching
-  
+  boolean checkCourse(String course){
+    for(int x=0; x<=this.courses.length-1; x++){
+      if(this.courses[x].equals(courses)){
+        return false;
+      }
+    }
+    return false;
+  }
   
 }

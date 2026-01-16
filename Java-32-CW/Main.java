@@ -14,11 +14,14 @@ class Main {
     String[] courses2  = {"MRF43","PGF43Q3C","SCF43QG","HUF43X"};
     
     // Create new student objects 
-
+    Student student1 = new Student("Tom", 11, 90, g1, courses1);
+    Student student2 = new Student("Jerry", 11, 90, g2, courses2);
     
     // output of course match by student for specific course
-	
-    
+    String course = "MRF43";
+    print("Student1 course MRF43: " +student1.checkCourse(course));
+    print("\n");
+    print("Student2 course MRF43: " +student2.checkCourse(course));
   }
 
 }
