@@ -63,7 +63,7 @@ class Main {
     sql  = " Select * From tracks ";
     sql += " Inner Join albums ON albums.albumid=tracks.albumid ";
     sql += " Inner Join artists ON albums.artistid=artists.artistid ";
-    sql += "LIMIT 10";
+    sql += "LIMIT 100";
     server.createContext("/songs", new RouteHandler(db,sql) );
 
     //5 Create a route called "songs" that gets all customer first and last names, the song names, and date of purchase (ie, Invoice Date) of each song.
