@@ -41,11 +41,13 @@ class Main {
     
     // Challenge 4:
     // Mr. ROFFLER will be replacing Mr. ARCHETTI for course “MQF44QGF” section 1. Update all records to reflect this change.
-
+    sql="UPDATE cr101 SET teacher1 = 'ROFFLER' WHERE teacher1='ARCHETTI' AND course = 'MQF44QGF'";
+    db.runSQL(sql);
     
     // Challenge 5:
     // Change the grade for STUDENT999 to 11 and the students offcclass to a junior status.
-
+    sql="UPDATE cr101 SET grade = 11 WHERE studentid='STUDENT999'";
+    db.runSQL(sql);
     
     // Challenge 6:
     // Add a course MKUFTC6 with a section 1. CASTRO R will be teaching this course period 9 in room 322 for student1231.
