@@ -52,12 +52,12 @@ class Main {
 
     //2
     String sql = "";
-    sql = "SELECT * FROM customers";
-    server.createContext("/customers", new RouteHandler(db,sql) );
+    // sql = "SELECT * FROM customers";
+    // server.createContext("/customers", new RouteHandler(db,sql) );
 
-    //3
-    sql = "SELECT * FROM employees";
-    server.createContext("/employees", new RouteHandler(db,sql) );
+    // //3
+    // sql = "SELECT * FROM employees";
+    // server.createContext("/employees", new RouteHandler(db,sql) );
 
     //4 Create a route called "albumsinfo" that gets the albums with the track information and artists information.
     sql  = " Select * From tracks ";
