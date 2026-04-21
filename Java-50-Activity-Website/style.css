@@ -1,6 +1,7 @@
 html,body{
   margin:0 auto;
   font-family:Arial;
+  background-color: #dff2ff;
 }
 .container{
   display:flex;
@@ -72,10 +73,52 @@ nav a:hover{
   border:1px solid black;
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #output{
   display:flex;
   flex-wrap: wrap;
+  padding:10px;
   align-items: center;
+}
+.card{
+  margin:10px;
+  padding:10px;
+  border:1px solid black;
+  text-align:center;
+  background-color:#cccedf;
+}
+
+.card p{
+  font-size:13px;
+}
+
+.card h1{
+  font-size:20px;
+}
+.card h2{
+  font-size:15px;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 

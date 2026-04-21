@@ -29,12 +29,12 @@ function generateCards(songs){
     build += `<div class="card" >
                 <h1> Song Name </h1>
                 <p> ${song.Name}</p>
-                <h1> Album </h1>
+                <h2> Album </h2>
                 <p> ${song.Title} </p>
-                <h1> Composer </h1>
+                <h2> Composer </h2>
                 <p> ${song.Composer}</hp>
                 <hr>
-                </div>`;
+              </div>`;
   }
   // Inject the build content into the output container
   output.innerHTML = build;
