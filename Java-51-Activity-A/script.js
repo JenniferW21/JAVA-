@@ -43,7 +43,7 @@ function filterByCity(){
       newEmployees.push(employee);
     }
   }
-  console.log(`# of Employees found: ${newEmployees.length}`);
+  
   // Task 4: Generate the cards with your new array.
     generateCards(newEmployees);  
 }
