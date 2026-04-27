@@ -4,7 +4,7 @@
 // Tasks 1 & 2 are in the index.html file
 let employees, info;
 async function init(){
-  let link = "https://orange-happiness-wr5r9g9qpj472p-8500.app.github.dev"; //replace with your Dev URL
+  let link = "https://ubiquitous-guacamole-wvrrvgg65qpf9j59-8500.app.github.dev"; //replace with your Dev URL
   let route= "/employees";
   info = await fetch(link+route);
   employees = await info.json();
@@ -29,9 +29,9 @@ function generateCards(employees){
   output.innerHTML = build;  
 }
 
-
 // Task 3: Write the event handler function "filterByCity". 
-// Your function should create a new empty array called 'newEmployees' to which you will add employees that match your specific filtering requirements.
+// Your function should create a new empty array called 'newEmployees' to which you will add employees that match your specific filtering requirements
+
 function filterByCity(){
   let city = document.getElementById("city").value;
   console.log(city);
