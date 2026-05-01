@@ -1,0 +1,40 @@
+/* CSS selectors and rules */
+#header{
+  padding: 20px;
+  text-align: center;
+  border: solid 2px black;
+  background-color:PeachPuff;
+}
+
+#search{
+  text-align: center;
+  border: solid 2px black;
+  background-color:Gold;
+}
+.container{
+  display:flex;
+  text-align: center;
+  border: solid 2px black;
+}
+
+nav{
+  width:200px; /* width is fixed */
+  text-align: center;
+  border: solid 2px black;
+  height:500px;
+  background-color:Gold;
+}
+#centerpanel{
+  flex:3;
+  text-align: center;
+  border: solid 2px black;
+  height:500px;
+  background-color:Plum;
+}
+
+
+#footer{
+  text-align: center;
+  border: solid 2px black;
+  background-color:PapayaWhip;
+}
