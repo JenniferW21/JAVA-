@@ -1,8 +1,5 @@
-// Create a webpage to search for employees by City.
-// Your DB Server that serves the 'employees' route must be running!!
-
-// Tasks 1 & 2 are in the index.html file
 let employees, info;
+
 async function init(){
   let link = "https://orange-happiness-wr5r9g9qpj472p-8500.app.github.dev"; //replace with your Dev URL
   let route= "/employees";
@@ -10,41 +7,41 @@ async function init(){
   info = await fetch(link+route);
   employees = await info.json();
 
-  generateCards(employees);  
+  generateCards(employees);
 }
 
-function generateCards(employees){
-  let Centerpanel = document.getElementById("centerpanel");
+function generateCards(employees){  
+  let mainpanel = document.getElementById("centerpanel");
   let build ="";
    
   for(let i=0; i<employees.length; i++){
-    let employee = employees[i];
-    build += `<div class="card" >`;
-    build +=   `<h3> Employee ID : ${employee.EmployeeId}</h3>`;
-    build +=   `<div> First Name : ${employee.FirstName}</div>`;
-    build +=   `<div> Last Name : ${employee.LastName}</div>`;
-    build +=   `<hr>`;
-    build +=   `<p> City : ${employee.City}</p>`;    
+    let employee = employees[i]
+    build += `<div class="card" >`
+    build += `<h3> Employee ID : ${employee.EmployeeId}</h3>`;
+    build += `<div> First Name : ${employee.FirstName}</div>`;
+    build += `<div> Last Name : ${employee.LastName}</div>`;
+    build += `<p> City : ${employee.City}</p>`;
+    build += `<img src="cities/${employee.City}.PNG">`;
+    build += `<hr>`;
     build += `</div>`;
   }
-  Centerpanel.innerHTML = build;  
+  mainpanel.innerHTML = build;  
 }
 
-// Task 3: Write the event handler function "filterByCity". 
-// Your function should create a new empty array called 'newEmployees' to which you will add employees that match your specific filtering requirements
-
-function filterByCity(){
+function filter(){
   let city = document.getElementById("city").value;
   console.log(city);
-  let newEmployees =[];
+
+  let newEmployees = []; //create a list of songs searched for
   
-  for(let i=0;i<employees.length;i++){
-    let employee = employees[i];
-    if (employee.City == city){
-      newEmployees.push(employee);
-    }
+  for(let i=0; i<employees.length;i++){
+    let employee = employees[i] //get each sog
+    //make sure the list is no
+    if( employee.City == city ) {
+          //add to the new list
+          newEmployees.push(employee);
+       }
   }
-  
-  // Task 4: Generate the cards with your new array.
-    generateCards(newEmployees);  
+  console.log(`number found ${newEmployees.length}`)
+  generateCards(newEmployees);  
 }
