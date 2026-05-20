@@ -18,6 +18,7 @@ function generateCards(movies){
     let movie = movies[i];
     build += `<div class="card">
                 <h3> ${movie.movieId}. Movie Name : ${movie.movieName}</h3>
+                
                 <div> First Name : ${movie.Genre}</div>
                 <div> Last Name : ${movie.yearReleased}</div>
                 <div> Country : ${movie.episodeDuration}</div>
@@ -25,25 +26,25 @@ function generateCards(movies){
                 <hr>
               </div>`;
   }
-  // <img src='countries/${customer.Country}.PNG'>
+
+  //<img src='movies/${movie.Country}.jpg'>
   // Now inject the build content into the output container
   centerpanel.innerHTML = build;
 }
 
-function filterbyMovies(){
-  let movie = document.getElementById("movies").value;
-  console.log(movie);
+// function filterbyMovies(){
+//   let movie = document.getElementById("movies").value;
+//   console.log(movie);
 
-  let movieList = []; //create a list of movies searched for
+//   let movieList = []; 
   
-  for(let i=0; i<movies.length;i++){
-    let movie = movies[i] //get each sog
-    //make sure the list is no
-    if( movie.Country == country ) {
-          //add to the new list
-          customerList.push(customer);
-    }
-  }
-  console.log(`number found ${customerList.length}`)
-  generateCards(customerList);  
-}
+//   for(let i=0; i<movies.length;i++){
+//     let movie = movies[i] 
+    
+//     if( movie.movieName == movie ) {
+//           movieList.push(movie);
+//     }
+//   }
+//   console.log(`number found ${movieList.length}`)
+//   generateCards(movieList);  
+// }
