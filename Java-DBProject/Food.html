@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Movies | Food</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="Food.js"></script>
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Food & Drinks </h1>
+      </div>
+
+      <!--  nav bar -->
+      <nav id='nav'>
+        <a href="index.html" >Home</a>   
+        <a href="Movies.html">MoviesToWatch</a> 
+        <a href="Food.html">Food & Drinks</a>
+        <a href="Reviews.html">Reviews</a>
+      </nav>
+
+      <hr>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              <h3> Yum Yum!</h3>
+                <input type="text" id="food" placeholder="Enter Food / Drinks" >        
+                <a class="button" onclick="filterbyFood()"> Search </a>
+              <!-- <h4 id="count"></h4> -->
+              <br>
+              <h3> Food / Beverage</h3>
+                <a class="button" onclick="filterSmall()"> Small </a>
+                <a class="button" onclick="filterLarge()"> Large </a>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel'></div>
+        
+      </div>
+
+      <hr>
+
+      <!--  Footer -->
+<div id='foot'>
+        <div class="container">
+
+          <div class="footer">
+            <strong>Pages</strong>
+            <a href="index.html" >Home</a>
+            <a href="Movies.html">MoviesToWatch</a>
+            <a href="Food.html">Food & Drinks</a>
+            <a href="Reviews.html">Reviews</a>
+          </div>
+
+          <div class="footer">
+            <strong>About</strong>
+            <p> Jennifer Wang </p>
+            <p> Period 7 Java</p>
+            <p> 2026 © DB Project </p>
+          </div>
+
+          <div class="footer">
+            <strong>Policy Us</strong>
+            <p> Terms & Conditions </p>
+            <p> Privacy Policy </p>
+            <p> Code of Conduct </p>
+          </div>
+
+          <div class="footer">
+            <strong>Contact Us</strong>
+            <p> Email </p>
+            <p> Media </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

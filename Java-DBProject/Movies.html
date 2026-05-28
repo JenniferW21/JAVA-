@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Movie</title>
+    <title> Movies | Watch</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="Movies.js"></script>
   </head>
@@ -22,17 +22,22 @@
         <a href="Reviews.html">Reviews</a>
       </nav>
 
-
-
+      <hr>
+      
       <div class="container">
         
         <div class='panel'>
           <div class="container filter">
             <div>          
-              <h4> Search for Movies</h4>
-              <input style="flex:2;text-align:right;" type="text" id="movies" placeholder="Enter Movie" >        
-              <a class="button" onclick="filterbyMovies()"> Search </a>
+              <h3> Search for Movies</h3>
+                <input type="text" id="movies" placeholder="Enter Movie" >        
+                <a class="button" onclick="filterbyMovies()"> Search </a>
               <!-- <h4 id="count"></h4> -->
+              <br>
+              <h3> Genre</h3>
+                <a class="button" onclick="filterAction()"> Action </a>
+                <a class="button" onclick="filterScifi()"> Sci-Fi </a>
+                <a class="button" onclick="filterAnimation()"> Animation </a>
             </div>
           </div>
         </div>
@@ -41,9 +46,41 @@
         
       </div>
 
+      <hr>
+
       <!--  Footer -->
-      <div id='foot'>
-        <p> Jennifer Wang | DataBase Project | May 2026 </p>
+<div id='foot'>
+        <div class="container">
+
+          <div class="footer">
+            <strong>Pages</strong>
+            <a href="index.html" >Home</a>
+            <a href="Movies.html">MoviesToWatch</a>
+            <a href="Food.html">Food & Drinks</a>
+            <a href="Reviews.html">Reviews</a>
+          </div>
+
+          <div class="footer">
+            <strong>About</strong>
+            <p> Jennifer Wang </p>
+            <p> Period 7 Java</p>
+            <p> 2026 © DB Project </p>
+          </div>
+
+          <div class="footer">
+            <strong>Policy Us</strong>
+            <p> Terms & Conditions </p>
+            <p> Privacy Policy </p>
+            <p> Code of Conduct </p>
+          </div>
+
+          <div class="footer">
+            <strong>Contact Us</strong>
+            <p> Email </p>
+            <p> Media </p>
+          </div>
+
+        </div>
       </div>
 
     </div>

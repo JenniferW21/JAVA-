@@ -2,7 +2,7 @@ let foods, info;
 
 async function init(){
   let link = "https://orange-happiness-wr5r9g9qpj472p-8500.app.github.dev"; //replace with your Dev URL
-  let route= "/Movies";
+  let route= "/Food";
 
   info = await fetch(link+route);
   foods = await info.json();
@@ -10,41 +10,68 @@ async function init(){
   generateCards(foods);
 }
 
-function generateCards(mofoodsvies){
+function generateCards(foods){
   let centerpanel = document.getElementById("centerpanel");
-  let build ="";
+  let build =`<div class="flex-container">`;
 
   for(let i=0; i<foods.length; i++){
     let food = foods[i];
     build += `<div class="card">
-                <h3> ${movie.movieId}. Movie Name : ${movie.movieName}</h3>
-                
-                <div> First Name : ${movie.Genre}</div>
-                <div> Last Name : ${movie.yearReleased}</div>
-                <div> Country : ${movie.episodeDuration}</div>
-                <p> Email : ${movie.Email}</p>
-                <hr>
-              </div>`;
+                <h4> ${food.itemID}. ${food.Food}</h4>
+                <p> Price: $${food.Price}0</p>
+              </div>`;  
   }
-
-  //<img src='movies/${movie.Country}.jpg'>
+    build +=`</div>`;
   // Now inject the build content into the output container
   centerpanel.innerHTML = build;
 }
 
 // function filterbyMovies(){
-//   let movie = document.getElementById("foods").value;
-//   console.log(movie);
+//   let filtermovie = document.getElementById("movies").value;
+//   console.log(filtermovie);
 
 //   let movieList = []; 
   
 //   for(let i=0; i<movies.length;i++){
-//     let movie = movies[i] 
+//     let movie = movies[i];
     
-//     if( movie.movieName == movie ) {
+//     if( movie.movieName == newmovie ) {
 //           movieList.push(movie);
 //     }
 //   }
-//   console.log(`number found ${movieList.length}`)
 //   generateCards(movieList);  
+// }
+
+// function filterAction(){
+//   let movieList = [];
+//   for(let i=0; i<movies.length; i++){
+//     let movie = movies[i];
+//     if(movie.Genre == "Action") {
+//       movieList.push(movie);
+//     }
+//   }
+//   generateCards(movieList);
+// }
+
+// function filterScifi(){
+//   let movieList = [];
+//   for(let i=0; i<movies.length; i++){
+//     let movie = movies[i];
+//     if(movie.Genre == "Sci-Fi") {
+//       movieList.push(movie);
+//     }
+//   }
+//   generateCards(movieList);
+// }
+
+
+// function filterAnimation(){
+//   let movieList = [];
+//   for(let i=0; i<movies.length; i++){
+//     let movie = movies[i];
+//     if(movie.Genre == "Animation") {
+//       movieList.push(movie);
+//     }
+//   }
+//   generateCards(movieList);
 // }

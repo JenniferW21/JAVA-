@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Movies | Reviews</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="Reviews.js"></script>
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div>
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> Reviews </h1>
+      </div>
+
+      <!--  nav bar -->
+      <nav id='nav'>
+        <a href="index.html" >Home</a>   
+        <a href="Movies.html">MoviesToWatch</a> 
+        <a href="Food.html">Food & Drinks</a>
+        <a href="Reviews.html">Reviews</a>
+      </nav>
+
+      <hr>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="filter">
+            <h3> Ratings</h3>
+            <div class="flex-container">          
+                <a class="button" onclick="filter5()"> 5 Stars </a>
+                <a class="button" onclick="filter4()"> 4 Stars </a>
+                <a class="button" onclick="filter3()"> 3 Stars </a>
+                <a class="button" onclick="filter2()"> 2 Stars </a>
+                <a class="button" onclick="filter1()"> 1 Stars </a>
+            </div>
+          </div>
+        </div>
+        
+        <div id='centerpanel'></div>
+        
+      </div>
+
+      <hr>
+
+      <!--  Footer -->
+<div id='foot'>
+        <div class="container">
+
+          <div class="footer">
+            <strong>Pages</strong>
+            <a href="index.html" >Home</a>
+            <a href="Movies.html">MoviesToWatch</a>
+            <a href="Food.html">Food & Drinks</a>
+            <a href="Reviews.html">Reviews</a>
+          </div>
+
+          <div class="footer">
+            <strong>About</strong>
+            <p> Jennifer Wang </p>
+            <p> Period 7 Java</p>
+            <p> 2026 © DB Project </p>
+          </div>
+
+          <div class="footer">
+            <strong>Policy Us</strong>
+            <p> Terms & Conditions </p>
+            <p> Privacy Policy </p>
+            <p> Code of Conduct </p>
+          </div>
+
+          <div class="footer">
+            <strong>Contact Us</strong>
+            <p> Email </p>
+            <p> Media </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

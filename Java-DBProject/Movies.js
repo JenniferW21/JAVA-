@@ -12,39 +12,70 @@ async function init(){
 
 function generateCards(movies){
   let centerpanel = document.getElementById("centerpanel");
-  let build ="";
+  let build =`<div class="flex-container">`;
+  let movieImg="";
 
   for(let i=0; i<movies.length; i++){
     let movie = movies[i];
     build += `<div class="card">
-                <h3> ${movie.movieId}. Movie Name : ${movie.movieName}</h3>
-                
-                <div> First Name : ${movie.Genre}</div>
-                <div> Last Name : ${movie.yearReleased}</div>
-                <div> Country : ${movie.episodeDuration}</div>
-                <p> Email : ${movie.Email}</p>
-                <hr>
-              </div>`;
+                <img src="movies/${movie.movieName}.jpg">
+                <h4> ${movie.movieId}. ${movie.movieName}</h4>
+                <p> Genre: ${movie.Genre}</p>
+                <p> Released: ${movie.yearReleased}</p>
+                <p> Duration: ${movie.episodeDuration} min</p>
+              </div>`;  
   }
-
-  //<img src='movies/${movie.Country}.jpg'>
+    build +=`</div>`;
   // Now inject the build content into the output container
   centerpanel.innerHTML = build;
 }
 
-// function filterbyMovies(){
-//   let movie = document.getElementById("movies").value;
-//   console.log(movie);
+function filterbyMovies(){
+  let filtermovie = document.getElementById("movies").value;
+  console.log(filtermovie);
 
-//   let movieList = []; 
+  let movieList = []; 
   
-//   for(let i=0; i<movies.length;i++){
-//     let movie = movies[i] 
+  for(let i=0; i<movies.length;i++){
+    let movie = movies[i];
     
-//     if( movie.movieName == movie ) {
-//           movieList.push(movie);
-//     }
-//   }
-//   console.log(`number found ${movieList.length}`)
-//   generateCards(movieList);  
-// }
+    if( movie.movieName == newmovie ) {
+          movieList.push(movie);
+    }
+  }
+  generateCards(movieList);  
+}
+
+function filterAction(){
+  let movieList = [];
+  for(let i=0; i<movies.length; i++){
+    let movie = movies[i];
+    if(movie.Genre == "Action") {
+      movieList.push(movie);
+    }
+  }
+  generateCards(movieList);
+}
+
+function filterScifi(){
+  let movieList = [];
+  for(let i=0; i<movies.length; i++){
+    let movie = movies[i];
+    if(movie.Genre == "Sci-Fi") {
+      movieList.push(movie);
+    }
+  }
+  generateCards(movieList);
+}
+
+
+function filterAnimation(){
+  let movieList = [];
+  for(let i=0; i<movies.length; i++){
+    let movie = movies[i];
+    if(movie.Genre == "Animation") {
+      movieList.push(movie);
+    }
+  }
+  generateCards(movieList);
+}
