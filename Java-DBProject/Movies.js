@@ -13,6 +13,7 @@ async function init(){
 function generateCards(movies){
   let centerpanel = document.getElementById("centerpanel");
   let build =`<div class="flex-container">`;
+
   let movieImg="";
 
   for(let i=0; i<movies.length; i++){
@@ -21,9 +22,9 @@ function generateCards(movies){
                 <img src="movies/${movie.movieName}.jpg">
                 <h4> ${movie.movieId}. ${movie.movieName}</h4>
                 <p> Genre: ${movie.Genre}</p>
-                <p> Released: ${movie.yearReleased}</p>
+                <p> Released : ${movie.yearReleased}</p>
                 <p> Duration: ${movie.episodeDuration} min</p>
-              </div>`;  
+                </div>`;
   }
     build +=`</div>`;
   // Now inject the build content into the output container

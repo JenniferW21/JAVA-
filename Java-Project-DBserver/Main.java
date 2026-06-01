@@ -47,8 +47,11 @@ class Main {
     server.createContext("/Movies", new RouteHandler(db,sql) );
 
     
-    sql  = " Select * from Food ";
+    sql  = " Select itemID, Food, Price from Food_Drinks";
     server.createContext("/Food", new RouteHandler(db,sql) ) ;
+    
+    sql  = " Select itemID, Drinks, Price from Food_Drinks";
+    server.createContext("/Drinks", new RouteHandler(db,sql) ) ;
         
     
     sql  = " Select * from Reviews ";

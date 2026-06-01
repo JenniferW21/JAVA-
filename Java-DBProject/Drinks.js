@@ -1,4 +1,4 @@
-let foods, info;
+let dr, info;
 
 async function init(){
   let link = "https://orange-happiness-wr5r9g9qpj472p-8500.app.github.dev"; //replace with your Dev URL
@@ -16,8 +16,7 @@ function generateCards(foods){
 
   for(let i=0; i<foods.length; i++){
     let food = foods[i];
-    build += `<div class="card" id="foodimg">
-              <img src="food/${food.Food}.jpg">
+    build += `<div class="card">
                 <h4> ${food.itemID}. ${food.Food}</h4>
                 <p> Price: $${food.Price}0</p>
               </div>`;  

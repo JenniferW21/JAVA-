@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Movies | Food</title>
+    <title> Movies | Food </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="Food.js"></script>
+
   </head>
   
   <!-- Call the int function when website loads -->
@@ -30,11 +31,15 @@
           <div class="container filter">
             <div>          
               <h3> Yum Yum!</h3>
-                <input type="text" id="food" placeholder="Enter Food / Drinks" >        
+              <div>
+                <input type="text" id="food" placeholder="Enter Food / Beverage" >        
                 <a class="button" onclick="filterbyFood()"> Search </a>
+              </div>
+              <br>
+
               <!-- <h4 id="count"></h4> -->
               <br>
-              <h3> Food / Beverage</h3>
+              <h3> Food Amount </h3>
                 <a class="button" onclick="filterSmall()"> Small </a>
                 <a class="button" onclick="filterLarge()"> Large </a>
             </div>
