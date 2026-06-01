@@ -16,7 +16,7 @@ function generateCards(foods){
 
   for(let i=0; i<foods.length; i++){
     let food = foods[i];
-    build += `<div class="card" id="foodimg">
+    build += `<div class="foodcard">
               <img src="food/${food.Food}.jpg">
                 <h4> ${food.itemID}. ${food.Food}</h4>
                 <p> Price: $${food.Price}0</p>

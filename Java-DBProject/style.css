@@ -45,7 +45,11 @@ a:hover {
   border: 2px solid #E6E6E6;
   
 }
-
+img{
+  width:300px;
+  height:auto;
+  border: 2px solid #E6E6E6;
+}
 
 #centerpanel{
   flex:3;
@@ -95,6 +99,30 @@ a:hover {
   width:10px;     
 }
 
+
+.foodcard img{
+  border: 2px solid #E6E6E6;
+  border-radius:5px;
+  width:80%;
+  height:50%;
+}
+.foodcard{
+  width:200px;
+  padding:5px;
+  text-align:center;
+}
+.foodcard p{
+  text-wrap:wrap;
+  font-size:14px;
+  color: #797878;
+}
+.foodcard div{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
 .card{
   width:200px;
   padding:5px;
@@ -109,22 +137,18 @@ a:hover {
 }
 
 .card div{
-  
   font-weight: bold;
   text-decoration: underline;
 }
 
 
 .card img{
-  border-radius:10px;
-  width:200px;
+  border: 2px solid #E6E6E6;
+  border-radius:5px;
+  width:85%;
   height:auto;
 }
 
-#foodimg{
-  width:200px;
-  height:auto;
-}
 
 .button{
   text-decoration:none;
