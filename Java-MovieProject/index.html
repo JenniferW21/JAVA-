@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Movies | Food </title>
+    <title> Movies | Home</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="Food.js"></script>
-
   </head>
   
   <!-- Call the int function when website loads -->
-  <body onload="init()">
+  <body>
     <div>
       <!--  Header or Banner -->
       <div id="header">
-        <h1> Food & Drinks </h1>
+        <h1> Home </h1>
       </div>
 
       <!--  nav bar -->
@@ -24,36 +22,46 @@
       </nav>
 
       <hr>
-      
-      <div class="container">
-        
-        <div class='panel'>
-          <div class="container filter">
-            <div>          
-              <h3> Yum Yum!</h3>
-              <div>
-                <input type="text" id="food" placeholder="Enter Food / Beverage" >        
-                <a class="button" onclick="filterbyFood()"> Search </a>
-              </div>
-              <br>
 
-              <!-- <h4 id="count"></h4> -->
-              <br>
-              <h3> Food Amount </h3>
-                <a class="button" onclick="filterSmall()"> Small </a>
-                <a class="button" onclick="filterLarge()"> Large </a>
-            </div>
-          </div>
+      <div class="container">  
+        <div class='panel'> 
+
+        <h2>Trending</h2>
+          <img src="movies/Zootopia 2.jpg">
+            <p>Zootopia 2</p>
+          <img src="movies/The Amazing Spider-Man 2.jpg">
+          <p>The Amazing Spider-Man 2</p>
         </div>
         
-        <div id='centerpanel'></div>
+        <div id='centerpanel'>
+          <div>
+            <p>
+              Browse different Movies through this website! 
+            </p>
+            <a href="Movies.html" class="button">Browse Movies</a>
+          </div>
+
+          <div>
+            <p>
+            Thirsty, Hungry, or just want a snack?
+            </p>
+              <div><img src="food/Food.avif"></div>
+            <a href="Food.html" class="button">Order Now</a>
+          </div>
+
+          <div>
+            <p>
+              Wondering if the movie is worth the watch?
+            </p>
+            <a href="Reviews.html" class="button">Browse Reviews</a>
+          </div>
+        </div>
         
       </div>
 
       <hr>
-
       <!--  Footer -->
-<div id='foot'>
+      <div id='foot'>
         <div class="container">
 
           <div class="footer">
@@ -68,7 +76,7 @@
             <strong>About</strong>
             <p> Jennifer Wang </p>
             <p> Period 7 Java</p>
-            <p> 2026 © DB Project </p>
+            <p> © 2026 DB Project </p>
           </div>
 
           <div class="footer">

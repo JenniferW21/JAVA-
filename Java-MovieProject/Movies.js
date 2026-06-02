@@ -32,15 +32,15 @@ function generateCards(movies){
 }
 
 function filterbyMovies(){
-  let filtermovie = document.getElementById("movies").value;
-  console.log(filtermovie);
+  let newMovie = document.getElementById("movies").value;
+  console.log(newMovie);
 
   let movieList = []; 
   
   for(let i=0; i<movies.length;i++){
     let movie = movies[i];
     
-    if( movie.movieName == newmovie ) {
+    if( movie.movieName == newMovie ) {
           movieList.push(movie);
     }
   }

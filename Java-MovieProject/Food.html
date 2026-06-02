@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Movies | Home</title>
+    <title> Movies | Food </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="Food.js"></script>
+
   </head>
   
   <!-- Call the int function when website loads -->
-  <body>
+  <body onload="init()">
     <div>
       <!--  Header or Banner -->
       <div id="header">
-        <h1> Home </h1>
+        <h1> Food & Drinks </h1>
       </div>
 
       <!--  nav bar -->
@@ -22,45 +24,43 @@
       </nav>
 
       <hr>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <div class="container filter">
+            <div>          
+              <h3> Yum Yum!</h3>
+              <div>
+                <input type="text" id="food" placeholder="Enter Food / Beverage" >        
+                <a class="button" onclick="searchFood()"> Search </a>
+              </div>
+              <br>
+              
+              <h3> Catergory </h3>
+              <div>
+                <a class="button" onclick="filterFood()"> Food Option </a>
+                <a class="button" onclick="filterDrink()"> Drinks Option </a>
+              </div>
 
-      <div class="container">  
-        <div class='panel'> 
+              <h3> Types of Food/Drinks </h3>
+              <div>
+                <a class="button" onclick="filterSoda()"> Soda Option</a>
+                <a class="button" onclick="filterSnack()"> Snack Option </a>
+              </div>
 
-        <h2>Trending</h2>
-          <img src="movies/Zootopia 2.jpg">
-            <p>Zootopia 2</p>
-          <img src="movies/The Amazing Spider-Man 2.jpg">
-          <p>The Amazing Spider-Man 2</p>
+            </div>
+          </div>
         </div>
         
-        <div id='centerpanel'>
-            <div>
-            <p>
-              Browse different Movies through this website! 
-            </p>
-            <a href="Movies.html" class="button">Browse Movies</a>
-          </div>
-          <div>
-            <p>
-            Thirsty, Hungry, or just want a snack?
-            </p>
-            <img src="food/Food.avif">
-            <a href="Food.html" class="button">Order Now</a>
-          </div>
-
-          <div>
-            <p>
-              Wondering if the movie is worth the watch?
-            </p>
-            <a href="Reviews.html" class="button">Browse Reviews</a>
-          </div>
-        </div>
+        <div id='centerpanel'></div>
         
       </div>
 
       <hr>
+
       <!--  Footer -->
-      <div id='foot'>
+<div id='foot'>
         <div class="container">
 
           <div class="footer">
@@ -75,7 +75,7 @@
             <strong>About</strong>
             <p> Jennifer Wang </p>
             <p> Period 7 Java</p>
-            <p> © 2026 DB Project </p>
+            <p> 2026 © DB Project </p>
           </div>
 
           <div class="footer">

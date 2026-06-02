@@ -58,11 +58,6 @@ img{
   min-height:500px;
 }
 
-
-
-
-
-
 #foot{
   color: #E6E6E6;
 }
@@ -132,7 +127,7 @@ img{
 
 .card p{
   text-wrap:wrap;
-  font-size:14px;
+  font-size:15px;
   color: #797878;
 }
 
@@ -146,7 +141,7 @@ img{
   border: 2px solid #E6E6E6;
   border-radius:5px;
   width:85%;
-  height:auto;
+  height:60%;
 }
 
 
