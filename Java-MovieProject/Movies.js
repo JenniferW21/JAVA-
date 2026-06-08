@@ -80,3 +80,25 @@ function filterAnimation(){
   }
   generateCards(movieList);
 }
+
+function filterThriller(){
+  let movieList = [];
+  for(let i=0; i<movies.length; i++){
+    let movie = movies[i];
+    if(movie.Genre == "Thriller") {
+      movieList.push(movie);
+    }
+  }
+  generateCards(movieList);
+}
+
+function filterHorror(){
+  let movieList = [];
+  for(let i=0; i<movies.length; i++){
+    let movie = movies[i];
+    if(movie.Genre == "Horror") {
+      movieList.push(movie);
+    }
+  }
+  generateCards(movieList);
+}

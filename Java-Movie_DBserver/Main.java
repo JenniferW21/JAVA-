@@ -39,8 +39,7 @@ class Main {
     Database db = new Database("jdbc:sqlite:Movies.db");
     
     
-    server.createContext("/", new RouteHandler("Default route...") );
-
+    
     // create a route called 'Movies' that gets all Movies records.
     String sql = "";
     sql  = " Select * from Movies ";
@@ -50,8 +49,6 @@ class Main {
     sql  = " Select * from Food";
     server.createContext("/Food", new RouteHandler(db,sql) ) ;
     
-    // sql  = " Select itemID, Drinks, Price from Food_Drinks";
-    // server.createContext("/Drinks", new RouteHandler(db,sql) ) ;
         
     
     sql  = " Select * from Reviews ";

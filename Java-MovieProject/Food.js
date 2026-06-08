@@ -76,16 +76,16 @@ function filterDrink(){
 }
 
 function filterSoda(){
-  let drinkList = []; 
+  let sodaList = []; 
   
   for(let i=0; i<foods.length;i++){
-    let drink = foods[i];
+    let soda = foods[i];
     
-    if( drink.Type == "Soda" ) {
-          drinkList.push(drink);
+    if( soda.Type == "Soda" ) {
+          sodaList.push(soda);
     }
   }
-  generateCards(drinkList);  
+  generateCards(sodaList);  
 }
 
 function filterSnack(){

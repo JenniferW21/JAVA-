@@ -16,15 +16,23 @@ function generateCards(reviews){
 
   for(let i=0; i<reviews.length; i++){
     let review = reviews[i];
-    build += `<div class="card">
-                    <img id="img" src="profile.png">
+    build += `<div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img id="img" src="profile.jpg">
                     <h4> user${review.userId}532682213</h4>
                     <p> Movie: ${review.movieName}</p>
-                    <p> Rating: ${review.ratings}/5.0</p>
+                  </div>
+
+                  <div class="flip-card-back">
+                    <h3> Rating: ${review.ratings}/5.0</h3>
+                    <p> Comment: ${review.movieName} was ${review.comment} </p>
+                  </div>
+
+                </div>
               </div>`;  
   }
     build +=`</div>`;
-  //<p> ${review.comment} </p>
   // Now inject the build content into the output container
   centerpanel.innerHTML = build;
 }
