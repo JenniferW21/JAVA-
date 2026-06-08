@@ -38,6 +38,7 @@ class Main {
     // Create the database object
     Database db = new Database("jdbc:sqlite:Movies.db");
     
+    server.createContext("/", new RouteHandler("Default route...") );
     
     
     // create a route called 'Movies' that gets all Movies records.
@@ -49,10 +50,12 @@ class Main {
     sql  = " Select * from Food";
     server.createContext("/Food", new RouteHandler(db,sql) ) ;
     
-        
     
-    sql  = " Select * from Reviews ";
-    server.createContext("/Reviews", new RouteHandler(db,sql) ) ;
+    // sql  = " Select * from Reviews ";
+    // server.createContext("/Reviews", new RouteHandler(db,sql) ) ;
+
+    sql  = " Select Reviews.comment,Reviews.ratings, Reviews.userId,Movies.movieName FROM Reviews INNER JOIN Movies ON Reviews.movieName=Movies.movieName;";
+    server.createContext("/Review", new RouteHandler(db,sql) ) ;
 
 
     // Start the server      

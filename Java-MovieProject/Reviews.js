@@ -2,7 +2,7 @@ let reviews, info;
 
 async function init(){
   let link = "https://orange-happiness-wr5r9g9qpj472p-8500.app.github.dev"; //replace with your Dev URL
-  let route= "/Reviews";
+  let route= "/Review";
 
   info = await fetch(link+route);
   reviews = await info.json();
