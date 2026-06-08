@@ -4,7 +4,7 @@
     <title> Movies | Home</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  
+
   <!-- Call the int function when website loads -->
   <body>
     <div>
@@ -25,43 +25,67 @@
 
       <div class="container">  
         <div class='panel'> 
+          <h2>Trending</h2>
 
-        <h2>Trending</h2>
-          <img src="movies/Zootopia 2.jpg">
-            <p>Zootopia 2</p>
-          <img src="movies/The Amazing Spider-Man 2.jpg">
-          <p>The Amazing Spider-Man 2</p>
-        </div>
-        
-        <div id='centerpanel'>
-          <div>
-            <div class>
-              <p>
-                Browse different Movies through this website! 
-              </p>
-              <img src="movies/Obsession.jpg">
+          <div class="moviecollapse">
+            <img src="movies/Zootopia 2.jpg">
+            <div>
+              <button type="button" class="collapsible">Zootopia 2</button>
+                <div class="content">
+                  <p>Genre: Animation</p>
+                  <p>Release Date: November 2025</p>
+                  <p>Brave rabbit cop Judy Hopps and her friend, the fox Nick Wilde, team up again to crack a new case, the most perilous and intricate of their careers.</p>
+                </div>
+              </div>
             </div>
-            <a href="Movies.html" class="button">Out Now</a>
-          </div>
 
-          <div>
-            <p>
-            Thirsty, Hungry, or just want a snack?
-            </p>
-              <div><img src="food/Food.avif"></div>
-            <a href="Food.html" class="button">Order Now</a>
-          </div>
 
-          <div>
-            <p>
-              Wondering if the movie is worth the watch?
-            </p>
-            <a href="Reviews.html" class="button">Browse Reviews</a>
-          </div>
+          <div class="moviecollapse">
+            <img src="movies/Obsession.jpg">
+            <div>
+              <button type="button" class="collapsible">Obsession</button>
+                <div class="content">
+                  <p>Genre: Horror</p>
+                  <p>Release Date: May 2026</p>
+                  <p>After breaking the mysterious "One Wish Willow" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.</p>
+                </div>
+              </div>
+            </div>
         </div>
-        
-      </div>
+      
 
+
+      <div id='centerpanel'>
+          <div class="container">
+            <div class="pic">
+              <img src="browsemovies.avif">
+            </div>
+
+            <div class="pic">
+              <p>Bored? Browse through this website to find the latest movies! Or find a movie to your taste, ranging from horror to animations.</p>
+              <a href="Movies.html" class="button">Browse Movies</a>
+            </div>
+          </div>
+
+          <div class="container">
+            
+            <div class="pic">
+              <p>Thirsty, Hungry, or just want a snack? Browse through the Food And Drinks Menu to find the perfect option.</p>
+              <a href="Food.html" class="button">Order Now</a>
+
+              <p>Wondering if the movie is worth the watch?</p>
+            <a href="Reviews.html" class="button">Browse Reviews</a>
+            </div>
+
+            <div class="pic">
+              <img src="food/Food.avif">
+            </div>
+            
+          </div>
+
+
+        </div>
+      </div>
       <hr>
       <!--  Footer -->
       <div id='foot'>
@@ -99,6 +123,21 @@
       </div>
 
     </div>
-    
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
   </body>
 </html>

@@ -16,20 +16,29 @@ a{
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  
 }
 
 a:hover {
-  color: cornflowerblue;
+  background-color: #af0606;
+  color: #E6E6E6;
 }
 
 .container{
   display:flex;
   flex-wrap: wrap;
   justify-content:center;
+  padding:10px;
+}
 
+.pic{
+  flex:1;
+  font-size:20px;
 }
 
 .panel{
+  justify-content: center;
+  padding:20px;
   color: #E6E6E6;
   flex:1;
   text-align: center;
@@ -152,13 +161,17 @@ img{
   padding:6px;
 }
 
+.filterbutton{
+  display:inline-block;
+  margin:5px;
+}
 
 
-/* flipcard */
+
 .flip-card {
   background-color: transparent;
   width: 200px;
-  height: 150px;
+  height: 170px;
   perspective: 1000px;
   padding:20px;
 }
@@ -201,4 +214,39 @@ img{
   background-color: #E6E6E6;
   color: #424242;
   transform: rotateY(180deg);
+}
+
+
+.collapsible {
+  display: inline-block;
+  background-color: #8B0000;
+  color: #E6E6E6;
+  cursor: pointer;
+  padding: 10px 16px;
+  width: auto;
+  border: none;
+  border-radius:10px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #af0606;
+  color: #E6E6E6;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #E6E6E6;
+  color:#424242;
+  font-size:12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.moviecollapse{
+  padding:8px;
 }
